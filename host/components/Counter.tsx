@@ -4,7 +4,7 @@ import DynamicImport from './DynamicImport';
 function Counter () {
 
 	const _props = {
-		url : `http://localhost:3000/_next/static/chunks/remoteEntry.js`,
+		url : `http://localhost:3001/_next/static/chunks/remoteEntry.js`,
 		name : 'remote',
 		path : './remoteComp',
 		componentProps : {

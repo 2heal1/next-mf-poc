@@ -9,6 +9,7 @@ const nextConfig = {
     const { isServer } = options;
     config.plugins.push (
       new NextFederationPlugin ({
+        shareStrategy:'loaded-first',
         name : 'host',
         filename : `static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
       })
